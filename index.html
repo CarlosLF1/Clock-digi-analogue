@@ -11,8 +11,7 @@
     <!-- Analogue clock -->
     <div class="container">
         <div class="clock">
-
-            <div class="circle circle" id="sc" style="--clr:#04fc43;"><i></i></div>
+            <div class="circle" id="sc" style="--clr:#04fc43;"><i></i></div>
             <div class="circle circle2" id="mn" style="--clr:#fee800;"><i></i></div>
             <div class="circle circle3" id="hr" style="--clr:#ff2972;"><i></i></div>
 
@@ -40,9 +39,9 @@
     </div>
 
     <script>
-        let hr = document.querySelector('#hr');
         let mn = document.querySelector('#mn');
         let sc = document.querySelector('#sc');
+        let hr = document.querySelector('#hr');
 
         setInterval(() => {
             let day = new Date();
@@ -52,7 +51,7 @@
 
             hr.style.transform = `rotateZ(${hh + mm / 12}deg)`;
             mn.style.transform = `rotateZ(${mm}deg)`;
-            sc.style.transform = `rotateZ(${sc}deg)`;
+            sc.style.transform = `rotateZ(${ss}deg)`;
         
             //Digital clock
             let hours = document.getElementById('hours');
