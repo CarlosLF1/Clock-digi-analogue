@@ -155,13 +155,15 @@ body {
 }
 
 #time div:nth-child(1)::after,
-#time div:nth-child(2)::after {
+#time div:nth-child(2)::after 
+{
     content: ':';
     position: absolute;
     right: -4px;
 }
 
-#time div:last-child {
+#time div:last-child 
+{
     font-size: 0.5em;
     display: flex;
     justify-content: center;
@@ -169,7 +171,8 @@ body {
     color: #fff;
 }
 
-#time div:nth-child(2)::after {
+#time div:nth-child(2)::after 
+{
     animation: animate 1s steps(1) infinite;
 }
 @keyframes animate 
